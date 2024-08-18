@@ -16,8 +16,7 @@ client = OpenAI()
 assistant = client.beta.assistants.create(
     name="Study Assistant",
     instructions="""You are an intelligent study assistant designed to help students with their studies.
-    Your primary role is to provide clear and accurate definitions, explanations, summaries, and examples from the study materials provided.
-    """,
+    Your primary role is to provide information from the study materials provided.""",
     model="gpt-4o",
     tools=[{"type": "file_search"}],
 )
@@ -38,7 +37,16 @@ thread = client.beta.threads.create(
     messages=[
         {
             "role": "user",
-            "content": "Please provide definitions or explanations from the attached study material.",
+            "content": """You are a study assistant designed to help students learn by generating flashcards from the provided study materials. 
+            When asked to generate a flashcard, please output the information in the following JSON format:
+
+            {
+            "id": "", // Leave this field empty; it will be filled in later.
+            "front": "<The question, prompt, or term to be placed on the front of the flashcard>",
+            "back": "<The answer, explanation, or definition to be placed on the back of the flashcard>",
+            }
+
+            Please ensure that the "id" field is left empty (as an empty string) and that the content for "front" and "back" fields is filled in appropriately.""",
             "attachments": [{"file_id": message_file.id, "tools": [{"type": "file_search"}]}]
         }
     ]

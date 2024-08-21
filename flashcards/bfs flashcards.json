@@ -1,0 +1,27 @@
+[
+    {
+        "id": "",
+        "front": "What does graph traversal mean?",
+        "back": "Graph traversal means visiting every vertex and edge exactly once in a well-defined order."
+    },
+    {
+        "id": "",
+        "front": "What is the goal of Breadth First Search (BFS)?",
+        "back": "The goal of BFS is to traverse the graph layerwise, starting from a selected node, and explore the neighbor nodes before moving to the next-level neighbor nodes."
+    },
+    {
+        "id": "",
+        "front": "How does BFS ensure that each node is visited only once?",
+        "back": "BFS uses a queue to store nodes and a boolean array to mark nodes as 'visited' after processing."
+    },
+    {
+        "id": "",
+        "front": "Can BFS be used to find the minimum distance between nodes in a graph with equal edge weights?",
+        "back": "Yes, if all the edges in a graph are of the same weight, BFS can be used to find the minimum distance between nodes."
+    },
+    {
+        "id": "",
+        "front": "What is the First In First Out (FIFO) strategy in BFS?",
+        "back": "In BFS, the FIFO strategy is used by storing nodes in a queue where they are visited in the order they were inserted: the node inserted first will be visited first."
+    }
+]

@@ -1,5 +1,4 @@
 import json
-import re
 
 def extract_json_objects(message_content):
     print("Raw input received:")

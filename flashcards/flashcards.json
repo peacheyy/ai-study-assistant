@@ -1,0 +1,27 @@
+[
+    {
+        "id": "",
+        "front": "What does graph traversal mean?",
+        "back": "Graph traversal means visiting every vertex and edge exactly once in a well-defined order. It ensures that each vertex of the graph is visited exactly once and the order of visiting vertices may depend on the algorithm being used."
+    },
+    {
+        "id": "",
+        "front": "What must be tracked during graph traversal and how?",
+        "back": "During graph traversal, it is important to track which vertices have been visited by marking them, often using a boolean array to avoid processing the same node again."
+    },
+    {
+        "id": "",
+        "front": "What is Breadth First Search (BFS)?",
+        "back": "BFS is a graph traversal algorithm that starts from a selected node and traverses the graph layer-wise, exploring neighbor nodes before moving to the next-level neighbors."
+    },
+    {
+        "id": "",
+        "front": "What is the primary method used in BFS for storing nodes, and why?",
+        "back": "In BFS, nodes are stored using a queue because it follows the First In First Out (FIFO) method, ensuring that neighbors of the node are visited in the order they were inserted."
+    },
+    {
+        "id": "",
+        "front": "How does BFS handle nodes with equal edge weights?",
+        "back": "If all edges in a graph are of the same weight, BFS can be used to find the minimum distance between nodes in the graph."
+    }
+]
